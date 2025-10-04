@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fira_Code, Lora, Roboto } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const sansRoboto = Roboto({
   variable: "--font-roboto",
@@ -28,11 +29,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head />
       <body
         className={`${sansRoboto.variable} ${monoFiraCode.variable} ${serifLora.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
