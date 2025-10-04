@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={`${sansRoboto.variable} ${monoFiraCode.variable} ${serifLora.variable} antialiased`}
+        className={`${sansRoboto.variable} ${monoFiraCode.variable} ${serifLora.variable} antialiased h-dvh`}
       >
         <ThemeProvider defaultTheme="system" enableSystem>
           {children}
