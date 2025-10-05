@@ -1,3 +1,5 @@
+import { Button } from "@/components/Button";
+
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center h-full">
@@ -8,6 +10,7 @@ export default function Home() {
             todo.space
           </span>
         </h1>
+        <Button>Click Me</Button>
       </main>
     </div>
   );

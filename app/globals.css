@@ -5,19 +5,23 @@
 
 /* Light mode theme (default) */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: #171717;
+  --background: oklch(0.9461 0 0);
+  --foreground: oklch(0.2046 0 0);
+  --primary: var(--color-teal-500);
+  --primary-foreground: oklch(1 0 0);
 }
 
 /* Dark mode color theme */
 [data-theme="dark"] {
-  --background: oklch(0.1 0 0);
-  --foreground: #ededed;
+  --background: oklch(0.2046 0 0);
+  --foreground: oklch(0.9461 0 0);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
 
   --font-sans: var(--font-roboto);
   --font-mono: var(--font-fira-code);
@@ -26,7 +30,6 @@
 
 @layer base {
   body {
-    @apply bg-background font-sans text-base
+    @apply bg-background font-sans text-base h-dvh;
   }
 }
-
