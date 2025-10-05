@@ -1,0 +1,163 @@
+@reference "../../app/globals.css";
+
+.logo {
+    @apply italic font-mono relative text-5xl pr-1;
+}
+
+.logo::before, .logo::after {
+    @apply top-0 bg-background overflow-hidden absolute px-1;
+    content: "todo.space";
+}
+
+.logo::before {
+    @apply left-1;
+    text-shadow: -2px 0 var(--color-blue-500);
+    animation-name: glitch-animation-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+}
+
+.logo::after {
+    @apply -left-1;
+    text-shadow: -2px 0 var(--color-red-500);
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+  0% {
+    clip-path: rect(43% 100% 55% 0);
+  }
+  5% {
+    clip-path: rect(12% 100% 89% 0);
+  }
+  10% {
+    clip-path: rect(51% 100% 76% 0);
+  }
+  15% {
+    clip-path: rect(96% 100% 97% 0);
+  }
+  20% {
+    clip-path: rect(25% 100% 96% 0);
+  }
+  25% {
+    clip-path: rect(4% 100% 29% 0);
+  }
+  30% {
+    clip-path: rect(15% 100% 71% 0);
+  }
+  35% {
+    clip-path: rect(81% 100% 84% 0);
+  }
+  40% {
+    clip-path: rect(32% 100% 80% 0);
+  }
+  45% {
+    clip-path: rect(62% 100% 93% 0);
+  }
+  50% {
+    clip-path: rect(20% 100% 52% 0);
+  }
+  55% {
+    clip-path: rect(94% 100% 98% 0);
+  }
+  60% {
+    clip-path: rect(80% 100% 98% 0);
+  }
+  65% {
+    clip-path: rect(35% 100% 54% 0);
+  }
+  70% {
+    clip-path: rect(61% 100% 98% 0);
+  }
+  75% {
+    clip-path: rect(70% 100% 92% 0);
+  }
+  80% {
+    clip-path: rect(82% 100% 100% 0);
+  }
+  85% {
+    clip-path: rect(65% 100% 79% 0);
+  }
+  90% {
+    clip-path: rect(37% 100% 62% 0);
+  }
+  95% {
+    clip-path: rect(28% 100% 97% 0);
+  }
+  100% {
+    clip-path: rect(11% 100% 69% 0);
+  }
+}
+@keyframes glitch-animation-2 {
+  0% {
+    clip-path: rect(54% 100% 95% 0);
+  }
+  5% {
+    clip-path: rect(41% 100% 79% 0);
+  }
+  10% {
+    clip-path: rect(70% 100% 92% 0);
+  }
+  15% {
+    clip-path: rect(35% 100% 55% 0);
+  }
+  20% {
+    clip-path: rect(30% 100% 68% 0);
+  }
+  25% {
+    clip-path: rect(20% 100% 47% 0);
+  }
+  30% {
+    clip-path: rect(38% 100% 93% 0);
+  }
+  35% {
+    clip-path: rect(19% 100% 96% 0);
+  }
+  40% {
+    clip-path: rect(66% 100% 95% 0);
+  }
+  45% {
+    clip-path: rect(95% 100% 99% 0);
+  }
+  50% {
+    clip-path: rect(3% 100% 63% 0);
+  }
+  55% {
+    clip-path: rect(42% 100% 76% 0);
+  }
+  60% {
+    clip-path: rect(23% 100% 49% 0);
+  }
+  65% {
+    clip-path: rect(85% 100% 88% 0);
+  }
+  70% {
+    clip-path: rect(57% 100% 96% 0);
+  }
+  75% {
+    clip-path: rect(57% 100% 92% 0);
+  }
+  80% {
+    clip-path: rect(55% 100% 97% 0);
+  }
+  85% {
+    clip-path: rect(56% 100% 74% 0);
+  }
+  90% {
+    clip-path: rect(18% 100% 53% 0);
+  }
+  95% {
+    clip-path: rect(96% 100% 100% 0);
+  }
+  100% {
+    clip-path: rect(29% 100% 50% 0);
+  }
+}

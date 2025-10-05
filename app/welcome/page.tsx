@@ -3,7 +3,7 @@ import { Button } from "@/components/Button";
 import Field from "@/components/form/Field";
 import Input from "@/components/form/Input";
 import Label from "@/components/form/Label";
-import Logo from "@/components/Logo";
+import Logo from "@/components/logo/Logo";
 
 export const metadata: Metadata = {
   title: "Welcome | todo.space",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function WelcomePage() {
   return (
-    <div className="flex flex-col h-full justify-center items-center gap-6">
+    <div className="flex flex-col h-full justify-center items-center gap-16">
       <Logo />
       <main className="border-border border rounded-xl w-full gap-4 flex flex-col overflow-hidden md:max-w-[580px]">
         <form id="createAccountForm" className="flex flex-col gap-4 p-6">
