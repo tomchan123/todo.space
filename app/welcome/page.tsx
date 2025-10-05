@@ -13,7 +13,7 @@ export default function WelcomePage() {
   return (
     <div className="flex flex-col h-full justify-center items-center gap-6">
       <Logo />
-      <main className="border-border border rounded-xl w-full gap-4 flex flex-col overflow-hidden">
+      <main className="border-border border rounded-xl w-full gap-4 flex flex-col overflow-hidden md:max-w-[580px]">
         <form id="createAccountForm" className="flex flex-col gap-4 p-6">
           <div className="mb-2">
             <h1 className="text-3xl font-bold">Welcome</h1>
@@ -25,7 +25,6 @@ export default function WelcomePage() {
             <Label>Avatar</Label>
             {/** TODO: avatar selection */}
             <div className="h-18 border-border border rounded-xl flex justify-center items-center gap-4 overflow-hidden">
-              <div className="size-13 border-border border rounded-full"></div>
               <div className="size-13 border-border border rounded-full"></div>
               <div className="size-13 border-border border rounded-full"></div>
               <div className="size-13 border-border border rounded-full"></div>
