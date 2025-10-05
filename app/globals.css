@@ -7,14 +7,19 @@
 :root {
   --background: oklch(0.9461 0 0);
   --foreground: oklch(0.2046 0 0);
-  --primary: var(--color-teal-500);
+  --primary: var(--color-teal-600);
   --primary-foreground: oklch(1 0 0);
+  --border: var(--color-neutral-500);
+  --muted: var(--color-neutral-200);
+  --muted-foreground: oklch(1 0 0);
 }
 
 /* Dark mode color theme */
 [data-theme="dark"] {
   --background: oklch(0.2046 0 0);
   --foreground: oklch(0.9461 0 0);
+  --muted: var(--color-neutral-800);
+  --muted-foreground: oklch(1 0 0);
 }
 
 @theme inline {
@@ -22,6 +27,9 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
 
   --font-sans: var(--font-roboto);
   --font-mono: var(--font-fira-code);
@@ -30,6 +38,6 @@
 
 @layer base {
   body {
-    @apply bg-background font-sans text-base h-dvh;
+    @apply bg-background font-sans text-base h-dvh p-4;
   }
 }
